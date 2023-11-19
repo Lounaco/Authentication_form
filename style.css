@@ -10,14 +10,21 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(46, 105, 139);
+    background: url(authentication_form_2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 
 }
 
 .envelope {
     width: 420px;
-    background: pink;
+    background: transparent;
+    border: 1px solid rgb(131, 86, 62);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .2);
     color:aliceblue;
+    border-radius: 10px;
+    padding: 30px 40px;
 }
 
 .envelope h1 {
@@ -41,7 +48,7 @@ body {
     outline:none;
     border: 2px solid rgba(225, 255, 255, .2);
     border-radius: 40px;
-    font-size: 16px;
+    font-size: 18px;
     color:aliceblue;
 }
 
@@ -55,9 +62,59 @@ body {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    fontsize: 20px;
+    font-size: 20px;
 }
 
 .envelope .remember-forgot {
-    
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin:-15px 0px 15px;
+}
+
+.remember-forgot label input {
+    accent-color:aliceblue ;
+    margin-right: 3px;
+
+}
+
+.remember-forgot a {
+    color:aliceblue;
+    text-decoration: none;
+
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.envelope .button {
+    width: 100%;
+    height: 45px;
+    background: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(17, 19, 19, 0.2);
+    cursor: pointer;
+    font-size: 20px;
+    color:black;
+    font-weight: 600;
+}
+
+.envelope .register-link {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.register-link p a {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
 }
